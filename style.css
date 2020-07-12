@@ -20,11 +20,28 @@ body {
 }
 
 .content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
     border: 3px solid blue;
     padding: 5px;
+    background-color: tomato;
+    z-index: 1;
 }
 
 .moreContent {
+    position: relative;
     border: 3px solid gold;
     padding: 5px;
+    background-color: skyblue;
+    z-index:2;
+}
+
+.footer {
+    border: 5px solid red;
+    background-color: gray;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
